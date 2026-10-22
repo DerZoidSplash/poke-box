@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Poké Box - Cart</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Desktop App Container -->
+  <div class="mobile-container">
+
+    <!-- Slide-in Drawer Navigation -->
+    <div id="drawer-backdrop" class="drawer-backdrop"></div>
+    <nav id="side-drawer" class="side-drawer" aria-label="Slide-out Menu">
+      <div class="drawer-logo">
+        <img src="images/logo.svg" alt="The Poké Box Logo" class="drawer-logo-img">
+      </div>
+      <div class="drawer-nav">
+        <a href="index.html" class="drawer-link">MENU</a>
+        <a href="ourstory.html" class="drawer-link">OUR STORY</a>
+        <a href="locations.html" class="drawer-link">LOCATIONS</a>
+      </div>
+    </nav>
+
+    <!-- Top Header -->
+    <header class="site-header cart-header">
+      <!-- Hamburger (mobile only) -->
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Logo -->
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="The Poké Box Logo" class="header-logo-img">
+        </a>
+      </div>
+
+      <!-- Desktop Nav (hidden on mobile) -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Menu</a>
+        <a href="ourstory.html" class="nav-link">Our Story</a>
+        <a href="locations.html" class="nav-link">Locations</a>
+      </nav>
+
+      <!-- Cart Count -->
+      <div class="header-actions">
+        <div class="cart-count">
+          1 item
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Scrollable Content -->
+    <main class="main-content cart-content">
+      <h1 class="page-title">Cart</h1>
+
+      <!-- Empty Cart State -->
+      <div id="empty-cart-state" style="display: none; text-align: center; margin-top: 60px;">
+        <h2 style="margin-bottom: 24px; font-weight: 400; color: var(--color-black);">Your cart is empty</h2>
+        <a href="index.html" class="add-more-btn" style="width: auto; padding: 12px 32px; display: inline-block;">Add items</a>
+      </div>
+
+      <!-- Full Cart State -->
+      <div id="full-cart-state" style="display: none;">
+        <!-- Cart Items List Container -->
+        <div id="cart-items-list"></div>
+
+        <a href="index.html" class="add-more-btn">Add more items</a>
+
+      <!-- Tip Section -->
+      <section class="tip-section">
+        <h2 class="section-title" style="border-bottom: none;">Add a tip</h2>
+        <div class="tip-options">
+          <button type="button" class="tip-btn" data-tip="10">10%</button>
+          <button type="button" class="tip-btn" data-tip="12">12%</button>
+          <button type="button" class="tip-btn selected" data-tip="15">15%</button>
+          <button type="button" class="tip-btn tip-btn-custom" data-tip="other">
+            <span class="custom-tip-label">Other</span>
+            <input type="number" class="custom-tip-input" min="0" max="100" placeholder="%" style="display: none;" aria-label="Custom tip percentage">
+          </button>
+        </div>
+      </section>
+
+      <!-- Summary Section -->
+      <section class="cart-summary">
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">$12.69</span>
+        </div>
+        <div class="summary-line">
+          <span>HST (13%)</span>
+          <span id="cart-hst">$1.65</span>
+        </div>
+        <div class="summary-line">
+          <span>Tip</span>
+          <span id="cart-tip">$1.90</span>
+        </div>
+        <div class="summary-line total-line">
+          <span>Total</span>
+          <span id="cart-total">$16.24</span>
+        </div>
+      </section>
+      </div> <!-- End full-cart-state -->
+    </main>
+
+    <!-- Bottom Bar -->
+    <footer id="cart-bottom-bar" class="byo-bottom-bar" style="padding: 16px; display: none;">
+      <button type="button" class="add-to-cart-btn">Continue to Payment</button>
+    </footer>
+
+    <footer class="site-footer">
+      <p>&copy; 2022 THE POKÉ BOX COMPANY</p>
+    </footer>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

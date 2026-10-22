@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Poké Box - Our Story</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Desktop App Container -->
+  <div class="mobile-container">
+
+    <!-- Slide-in Drawer Navigation -->
+    <div id="drawer-backdrop" class="drawer-backdrop"></div>
+    <nav id="side-drawer" class="side-drawer" aria-label="Slide-out Menu">
+      <div class="drawer-logo">
+        <img src="images/logo.svg" alt="The Poké Box Logo" class="drawer-logo-img">
+      </div>
+      <div class="drawer-nav">
+        <a href="index.html" class="drawer-link">MENU</a>
+        <a href="ourstory.html" class="drawer-link">OUR STORY</a>
+        <a href="locations.html" class="drawer-link">LOCATIONS</a>
+      </div>
+    </nav>
+
+    <!-- Top Header -->
+    <header class="site-header">
+      <!-- Hamburger (mobile only) -->
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Logo -->
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="The Poké Box Logo" class="header-logo-img">
+        </a>
+      </div>
+
+      <!-- Desktop Nav (hidden on mobile) -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Menu</a>
+        <a href="ourstory.html" class="nav-link active">Our Story</a>
+        <a href="locations.html" class="nav-link">Locations</a>
+      </nav>
+
+      <!-- Cart Icon -->
+      <div class="header-actions">
+        <button class="icon-btn cart-btn" aria-label="Cart" onclick="window.location.href='cart.html'">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Scrollable Content -->
+    <main class="main-content">
+      <h1 class="page-title">Our Story</h1>
+
+      <!-- Intro: text left, tuna slicing image right -->
+      <div class="story-row story-row-reverse">
+        <div class="story-image" onclick="openLightbox(this)">
+          <img src="images/story-tuna-slicing.jpg" alt="Fresh tuna being sliced on a cutting board">
+        </div>
+        <section class="story-section story-intro">
+          <p>The Poké Box was founded from a genuine urge to share a meal that is guilt-free and exciting to eat. We
+            believe you should always look forward to a meal and feel great about what you eat.</p>
+          <p>The Poké Box began serving delicious poké in Toronto in 2016. Since then we have established our poké as
+            more than a trend, for our customers it has become a lifestyle food.</p>
+          <p>We are committed to using ingredients that are superior in freshness, flavor, and above all, nutrition. We
+            pick and choose our ingredients carefully, working closely with our purveyors on a daily basis to procure
+            only the best.</p>
+          <p>The Poke Box prepares our ingredients on a daily basis, crafts our marinades in small batches and makes
+            each meal to order. The result is an exceptional box, filled with delicious proteins, refreshing vegetables,
+            complex sauces, and unique toppings.</p>
+          <p>Indulge in one of our boxes today and say hello to your new routine! We hope you enjoy our creations as
+            much as we do.</p>
+          <p class="story-signoff">Kevin &amp; Jeremy</p>
+        </section>
+      </div>
+
+      <!-- Fresh: ingredients image left, text right -->
+      <div class="story-row">
+        <div class="story-image" onclick="openLightbox(this)">
+          <img src="images/story-ingredients.jpg" alt="Colorful fresh poké ingredients arranged beautifully">
+        </div>
+        <section class="story-section story-value">
+          <h2 class="story-value-title">Fresh</h2>
+          <p>Our first and foremost mission is to ensure our dinners get the freshest ingredients. To support this
+            mission, our proteins and produce are purchased several times a week. The fish we offer is shipped to us
+            everyday and our menu specials will change with the seasons.</p>
+        </section>
+      </div>
+
+      <!-- Unique: text left, bowls image right -->
+      <div class="story-row story-row-reverse">
+        <div class="story-image" onclick="openLightbox(this)">
+          <img src="images/story-bowls.jpg" alt="Beautifully prepared poké bowls with fresh toppings">
+        </div>
+        <section class="story-section story-value">
+          <h2 class="story-value-title">Unique</h2>
+          <p>We offer a changing selection of seasonal ingredients that stem from Hawaii, Japan and Canada. Each
+            ingredient is tried and true before being added to the lineup, we seek to provide something for every
+            individual palette.</p>
+        </section>
+      </div>
+
+      <!-- Responsible: tuna diced image left, text right -->
+      <div class="story-row">
+        <div class="story-image" onclick="openLightbox(this)">
+          <img src="images/story-tuna-diced.jpg" alt="Freshly diced tuna on a wooden cutting board">
+        </div>
+        <section class="story-section story-value">
+          <h2 class="story-value-title">Responsible</h2>
+          <p>We believe in sustainability and environmental responsibility. We think our customers will be better able
+            to enjoy our product knowing the story behind each of our ingredients. Our supply and pricing of tuna
+            reflect the constraints of our eco-system.</p>
+        </section>
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2022 THE POKÉ BOX COMPANY</p>
+    </footer>
+
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+    <img id="lightbox-img" class="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="js/script.js"></script>
+  <script>
+    function openLightbox(el) {
+      const img = el.querySelector('img');
+      if (!img) return;
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.classList.add('active');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+{
+  "byo": {
+    "title": "Build Your Own Poke Bowl",
+    "price": "Starts at $8.99",
+    "image": "images/byo.jpg",
+    "description": "Your choice of size, base, proteins, veggies, toppings, sauces, and garnishes."
+  },
+  "signatureBowls": [
+    {
+      "id": 1,
+      "name": "Big Umami",
+      "price": "$17.30 - $21.90",
+      "regularPrice": 17.30,
+      "largePrice": 21.90,
+      "image": "images/big-umami.png",
+      "description": "Salmon, Ahi Tuna, Avocado, Seaweed Salad, Sweet Onion, Green Onion, Cabbage, Tempura Bits, Furikake, House Shoyu & Waikiki Mayo Sauce"
+    },
+    {
+      "id": 2,
+      "name": "The Poke Box",
+      "price": "$17.30 - $21.90",
+      "regularPrice": 17.30,
+      "largePrice": 21.90,
+      "image": "images/the-poke-box.png",
+      "description": "Salmon, Ahi Tuna, Edamame, Cucumber, Red Onion, Seaweed Salad, Imitation Crab Salad, Egg, Furikake, House Shoyu & Roasted Sesame Sauce"
+    },
+    {
+      "id": 3,
+      "name": "Rip Tide",
+      "price": "$16.90 - $20.80",
+      "regularPrice": 16.90,
+      "largePrice": 20.80,
+      "image": "images/rip-tide.png",
+      "description": "Tempura Shrimp, Crab Salad, Caplin Fish Roe, Cabbage, Red Pepper, Cucumber, Green Onion, Sesame, Spicy Aioli & Waikiki Mayo Sauce"
+    },
+    {
+      "id": 4,
+      "name": "California Dreaming",
+      "price": "$15.70 - $19.50",
+      "regularPrice": 15.70,
+      "largePrice": 19.50,
+      "image": "images/california-dreaming.png",
+      "description": "Imitation Crab, Cucumber, Avocado, Edamame, Seaweed Salad, Caplin Fish Roe, Tempura Bits, Cabbage, Nori, Spicy Aioli & Tamari Glaze Sauce"
+    },
+    {
+      "id": 5,
+      "name": "Ruffled Up",
+      "price": "$17.70 - $22.90",
+      "regularPrice": 17.70,
+      "largePrice": 22.90,
+      "image": "images/ruffled-up.png",
+      "description": "Smoked Duck, Tempura Shrimp, Egg, Sweet Onion, Cabbage, Cucumber, Mandarin Orange, Crispy Onion, Furikake, Cucumber Dill & Tamari Glaze Sauce"
+    },
+    {
+      "id": 6,
+      "name": "Garlic Koa",
+      "price": "$16.90 - $20.80",
+      "regularPrice": 16.90,
+      "largePrice": 20.80,
+      "image": "images/garlic-koa.png",
+      "description": "Japanese Fried Chicken, Egg, Edamame, Green Onion, Sweet Corn, Cabbage, Pickled Ginger, Sesame, Togarashi, Nori, Garlic Aioli & House Shoyu Sauce"
+    }
+  ],
+  "drawerMenu": [
+    { "title": "Menu", "link": "index.html" },
+    { "title": "Our Story", "link": "#our-story" },
+    { "title": "Locations", "link": "#locations" }
+  ]
+}
